@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__wrapper">
+                <div class="main-header__design-block"></div>
+                <div class="main-header__user-block">
+                    <a class="main-header__login" href="">Войти
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="form">
+            <div class="container">
+                <div class="form__wrapper">
+                    <form method="get" action="https://echo.htmlacademy.ru" id="form">
+                        <fieldset class="form__contacts">
+                            <h1 class="form__title">Начните тороговать прямо сейчас</h1>
+                            <p class="form__description">Нет спреда — торгуйте с прозрачными и точными котировками</p>
+                            <p class="form__description">Достаточно депозита в $10, чтобы начать торговать</p>
+                            <div class="form__contacts-wrapper">
+                                <p class="form__contacts-item">
+                                    <input class="form__contacts-input" type="email" name="mail" id="your-mail" autocapitalize="off" autocomplete="email" required>
+                                    <label class="form__label-mail" for="your-mail">Ваш e-mail</label>
+                                </p>
+                                <p class="form__contacts-item">
+                                    <input class="form__contacts-input" type="password" name="password" id="your-password" required minlength="4">
+                                    <label class="form__label-password" for="your-password">Придумайте пароль</label>
+                                </p>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__radio">
+                            <p class="form__radio-text">Валюта для ввода и вывода средств</p>
+                            <ul class="form__radio-list">
+                                <li class="form__radio-item">
+                                    <input class="form__radio-input visually-hidden" type="radio" name="currency" id="ruble" value="ruble" checked>
+                                    <label for="ruble"><span class="form__radio-input-span">Р</span></label>
+                                </li>
+                                <li class="form__radio-item">
+                                    <input class="form__radio-input visually-hidden" type="radio" name="currency" id="dollar" value="dollar">
+                                    <label for="dollar"><span class="form__radio-input-span-middle">S</span></label>
+                                </li>
+                                <li class="form__radio-item">
+                                    <input class="form__radio-input visually-hidden" type="radio" name="currency" id="euro" value="euro">
+                                    <label for="euro"><span class="form__radio-input-span">E</span></label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="form__checkbox-item">
+                            <input class="form__checkbox-input visually-hidden" type="checkbox" name="agreement" id="add-agreement" required>
+                            <label for="add-agreement">Я совершеннолетний, ознакомился и принимаю соглашение об
+                                оказании услуг.</label>
+                        </div>
+                        <p class="form__error-message">Учётная запись с указанным e-mail уже существует</p>
+                        <button class="button form__button" type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
